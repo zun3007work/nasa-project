@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x, 20.x]
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.JS version 20, 18, 16 and 14
