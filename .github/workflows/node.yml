@@ -10,11 +10,11 @@ jobs:
       CI: true
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x, 20.x]
-    runs-on: windows-latest
+        node-version: [16.x, 18.x, 20.x]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.JS version 20, 18, 16 and 14
+      - name: Use Node.JS version 20, 18 and 16
         uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.node-version}}
